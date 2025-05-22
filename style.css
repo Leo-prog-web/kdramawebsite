@@ -1,36 +1,73 @@
-
-    body {
+ body {
+      background-color: #f9f9f9;
       font-family: Arial, sans-serif;
-      background-color: #111;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-    .header {
-      background-color: #000;
-      padding: 20px;
-      text-align: center;
-    }
-    .movie-container {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      padding: 20px;
-      gap: 20px;
+      padding: 40px;
     }
+
     .movie-card {
-      background-color: #222;
-      padding: 15px;
-      border-radius: 10px;
-      max-width: 640px;
+      width: 320px;
+      cursor: pointer;
     }
-    iframe {
+
+    .thumbnail-container {
+      position: relative;
       width: 100%;
-      height: 360px;
-      border: none;
-      border-radius: 8px;
+      aspect-ratio: 16/9;
+      background-color: #ddd;
+      border-radius: 10px;
+      overflow: hidden;
     }
-    h2 {
-      margin: 10px 0;
+
+    .thumbnail-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
- 
+
+    .duration {
+      position: absolute;
+      bottom: 8px;
+      right: 8px;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      padding: 2px 6px;
+      font-size: 12px;
+      border-radius: 3px;
+    }
+
+    .movie-info {
+      display: flex;
+      margin-top: 12px;
+    }
+
+    .channel-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      margin-right: 12px;
+      background-color: #ccc;
+    }
+
+    .text-info {
+      flex: 1;
+    }
+
+    .title {
+      font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 4px;
+      color: #000;
+      line-height: 1.2;
+    }
+
+    .channel-name,
+    .views-date {
+      font-size: 13px;
+      color: #606060;
+    }
+
+    .views-date {
+      margin-top: 2px;
+    }
